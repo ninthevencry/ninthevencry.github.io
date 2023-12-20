@@ -1,5 +1,8 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainindex {
     background-image: url("../img/Background.JPG");
 }
 
@@ -7,5 +10,15 @@ body {
     background-color: white;
     margin: 10px;
     padding: 10px;
-    height: 200px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb a::before {
+    content: " ";
+    margin-left: 10%;
 }
