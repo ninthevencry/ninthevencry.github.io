@@ -1,10 +1,59 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/*
 .mainindex {
-    background-image: url("../img/Background.JPG");
+    background-image: url("../img/Background.JPG"); 
 }
+*/
+
+.container {
+    display: grid;
+    margin: auto;
+    position: relative;
+    max-width: 1600px;
+    gap: 10px;
+    grid-template-areas: "header header"
+                         "sidemenu blog"
+                         "footer footer";
+    grid-template-columns: 150px 1000px;
+    grid-template-rows: 150px 600px 100px;
+  } 
+
+  header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+    background-color: white;
+    grid-area: header;
+    border: 1px solid black;
+  }
+  
+sidemenu {
+    display: flex;
+    background-color: beige;
+    grid-area: sidemenu;
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+  
+blog {
+    background-color: whitesmoke;
+    grid-area: blog;
+    border: 1px solid black;
+}
+ 
+footer {
+    background-color: azure;
+    padding: 10px;
+    color: black;
+    grid-area: footer;
+    border: 1px solid black;
+    font-size: 0.5em;
+}
+
 
 .main {
     background-color: white;
@@ -12,6 +61,11 @@ body {
     padding: 10px;
     height: 400px;
     border-radius: 10px;
+}
+
+#deadcodeicon {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .breadcrumb li {
